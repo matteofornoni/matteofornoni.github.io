@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+:root{
+    --color-nav-bg: rgb(0, 0, 138);
+    --color-nav-text: rgb(211, 211, 211);
+    --color-nav-text-active: rgb(0, 117, 252);
+    --color-bg: rgb(247, 247, 247);
+}
+
+html {
+    scroll-padding-top: 73px;
+}
+
+/* navabr custom color */
+.navbar-custom {
+    background-color: var(--color-nav-bg);
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: var(--color-nav-text);
+}
+
+.navbar-custom .navbar-brand:hover{
+    color: var(--color-nav-text);
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    color: var(--color-nav-text);
+}
+
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:focus .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: var(--color-nav-bg);
+}
+
+.navbar-toggler-icon {
+    color: var(--color-nav-text);
+}
+
+.navbar-brand{
+    display: none;
+}
+
+.navbar button{
+    padding: 0;
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar button i{
+    color: white;
+    font-size: 2.5rem;
+}
+
+/* navbar css */
+
+.navbar-nav li{
+    font-size: 18px;
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    margin: 0 12px;
+    padding: 5px;
+    border-radius: 0.5rem;
+}
+
+.navbar-nav li .active{
+    color:  var(--color-nav-text-active) !important;
+}
+
+.navbar-nav li:hover{
+    background-color: var(--color-nav-text-active);
+    transition: all 0.3s;
+}
+
+.navbar-nav li:hover .active{
+    color: var(--color-nav-bg) !important;
+}
+
+/* general css */
+main{
+    margin: 6.5rem auto;
+    width: 80%;
+    padding: 2rem;
+    background-color: var(--color-bg);
+    border-radius: 2rem;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+}
+
+.mail{
+    word-break: break-all;
+}
+
+section{
+    position: relative;
+    margin-top: 3rem;
+}
+
+
+.header-text .name, 
+section h2 {
+    color: var(--color-nav-bg);
+}
+
+/* About me Section */
+.header{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.header .header-text{
+    display: inline;
+    align-items: center;
+}
+
+.header .header-text h1{
+    font-size: 60px;
+    color: var(--color-nav-bg);
+}
+
+.header .header-text .dot{
+    color: var(--color-nav-bg);
+}
+
+.header .header-image{
+    margin-right: 3rem;
+} 
+
+.header .header-image img{
+    border-radius: 100%;
+    max-width: 15rem;
+} 
+
+.header .img-links{
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.header .img-links a {
+    text-decoration: none;
+}
+
+.header .img-links a img{
+    max-width: 5rem;
+}
+
+.header .img-links .arx-image{
+    max-width: 3.7rem;
+}
+
+#about p{
+    text-align: justify;
+}
+
+/* Sections css */
+section p a{
+    word-break: break-all;
+}
+
+footer{
+    color: rgb(85, 85, 85);
+    text-align: end;
+    font-size: 15px;
+}
+
+/* bootsrap lg >= 992px */
+@media (max-width: 991px)
+{
+    html {
+        scroll-padding-top: 60px;
+    }
+
+    .navbar-brand{
+        display: block;
+    }
+
+    .header{
+        flex-wrap: wrap;
+    }
+
+    .header .header-text h1{
+        font-size: 44px;
+    }
+
+    .header .header-image{
+        display: inline;
+        margin: 0 auto;
+    } 
+}
+
+/* bootsrap lg >= 768px */
+@media (max-width: 767px) {
+
+    main{
+        width: 90%;
+        margin: 6rem auto;
+        padding: 1.5rem;
+    }
+    
+}
+
+/* bootsrap lg >= 576px */
+@media (max-width: 575px) {
+
+    main{
+        width: 95%;
+        padding: 1rem;
+    }
+
+    .header .header-text h1{
+        font-size: 35px;
+    }
+
+    .header .img-links a img{
+        max-width: 3.2rem;
+    }
+
+    .header .img-links .arx-image{
+        max-width: 2.7rem;
+    }
+    
+}
